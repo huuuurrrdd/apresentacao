@@ -1,0 +1,141 @@
+:root{
+  --font-size-biigg: 20rem;
+  --font-size-big: 15rem;
+  --font-size-medium-plus: 9rem;
+  --font-size-medium: 5rem;
+  --font-size-small: 2.5rem;
+
+  /*Cores quentes*/
+  --red: #F03A17;
+  --orange: #F7630C;
+  --dark-orange: #CA5010;
+  --brown: #8E562E;
+  --light-brown: #BB9167;
+  --light-yellow: #FCE100;
+  --yellow: #FFB900;
+  --dark-yellow:#D48C00;
+  --very-light-yellow: #FFD679;
+  --black: #000000;
+
+   /*Cores opostas*/
+   --b-red: #0FC5E8;
+   --b-orange: #089CF3;
+   --b-dark-orange: #35AFEF;
+   --b-brown:#71A9D1;
+   --b-light-brown: #446E98;
+   --b-light-yellow: #031EFF;
+   --b-yellow: #0046FF;
+   --b-dark-yellow: #2B73FF;
+   --b-very-light-yellow: #002986;
+   --b-white: #FFFFFF;
+
+   /*fonts*/
+
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+}
+
+canvas {
+  z-index: -1;
+  position:fixed;
+  left: 0;
+  top:0;
+  display: block;
+}
+
+.pres1{
+  font-size: var(--font-size-biigg);
+  color: var(--dark-orange);
+  font-family: "Lato";
+  cursor: default;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+}
+
+.pres2{
+  position: absolute;
+  background-color: var(--brown);
+  width: 50%;
+  padding: 30px;
+  right:0px;
+  top: 1000px;
+  /*bottom:0px;*/
+  font-size: var(--font-size-small);
+  color: var(--orange);
+  font-family: "Lato";
+
+}
+
+.button{
+  display: inline-block;
+  cursor: pointer;
+  width: 24%;
+  height: 50px;
+  background-color: var(--dark-orange);
+  text-align: center;
+  color: var(--b-white);
+  color: var(--orange);
+}
+
+
+a{
+  font-size: 2rem;
+}
+
+a:link {
+  color: var(--dark-orange);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color:var(--red);
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--dark-yellow);
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: var(--light-yellow);
+  text-decoration: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 620px) {
+
+  .pres1{
+    font-size: var(--font-size-medium-plus);
+
+  }
+
+  .pres2{
+    width: 90%;
+    
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
